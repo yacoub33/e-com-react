@@ -27,7 +27,7 @@ function Nav() {
               Books
             </a>
           </li>
-          <button className="btn__menu">
+          <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">
@@ -37,8 +37,8 @@ function Nav() {
             <span className="cart__length">2</span>
           </li>
         </ul>
-        <div className="menu__backfrop">
-          <button className="btn__menu btn__menu--close">
+        <div className="menu__backdrop">
+          <button className="btn__menu btn__menu--close" onClick={closeMenu}>
             <FontAwesomeIcon icon="times" />
           </button>
           <ul className="menu__links">
