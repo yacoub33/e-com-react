@@ -1,13 +1,13 @@
 import React from "react";
 import UndrawBooks from "../assets/Undraw_Books.svg";
 
-function Landing() {
+const Landing = () => {
   return (
     <section id="landing">
       <header>
         <div className="header__container">
           <div className="header__description">
-            <h1>UK's most awarded online library</h1>
+            <h1>UK's most awarded online library platform</h1>
             <h2>
               Find your dream book with <span className="purple">Library</span>
             </h2>
@@ -15,13 +15,13 @@ function Landing() {
               <button className="btn">Browse books</button>
             </a>
           </div>
-          <figure className="headder__img--wrapper">
+          <figure className="header__img--wrapper">
             <img src={UndrawBooks} alt="" />
           </figure>
         </div>
       </header>
     </section>
   );
-}
+};
 
 export default Landing;

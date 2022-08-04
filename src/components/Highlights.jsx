@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Highlight from "./ui/Highlight";
 
-function Highlighs() {
+const Highlights = () => {
   return (
     <section id="highlights">
       <div className="container">
@@ -19,7 +19,7 @@ function Highlighs() {
             <Highlight
               icon={<FontAwesomeIcon icon="book-open" />}
               title="10,000+ Books"
-              para="Library has books in all your favorite categories."
+              para="Library has books in all your favourite categories."
             />
             <Highlight
               icon={<FontAwesomeIcon icon="tags" />}
@@ -31,6 +31,6 @@ function Highlighs() {
       </div>
     </section>
   );
-}
+};
 
-export default Highlighs;
+export default Highlights;
